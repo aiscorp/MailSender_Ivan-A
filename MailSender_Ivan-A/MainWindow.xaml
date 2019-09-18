@@ -22,7 +22,9 @@
             <MenuItem Header="Help">
                 <MenuItem Header="Help manuals"/>
                 <MenuItem Header="About us"/>
+                <MenuItem Header="About us"/>
             </MenuItem>
+            
         </Menu>
 
         

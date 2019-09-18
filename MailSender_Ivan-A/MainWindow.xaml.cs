@@ -36,7 +36,7 @@ namespace MailSender_Ivan_A
             var user_name = UserName.Text;
             SecureString password = UserPassword.SecurePassword;
 
-            var msg = "Hellow, It's test message from C# lessons" + DateTime.Now;
+            var msg = "Hellow, It's test message from C# lessonы" + DateTime.Now;
 
             using (var client = new SmtpClient(host, port))
             {
@@ -48,6 +48,7 @@ namespace MailSender_Ivan_A
                     message.From = new MailAddress("aiscorp@yandex.ru", "Ivan A");
                     message.To.Add(new MailAddress("aiscorp@yandex.ru", "Ivan A"));
                     message.Subject = "Mail header from " + DateTime.Now;
+
                     //message.Attachments.Add(new Attachment());
 
                     try
